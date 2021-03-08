@@ -3,7 +3,18 @@
 <head>
 	<title></title>
 	<style type="text/css">
+
+		.text{
+			color: black;
+			text-align: center;
+			padding: 25px;
+			font-size: 22px;
+			line-height: 0.9;
+			font-family: Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+
+		}
 		
+
 		.opc{
 			position: absolute;
     		top: 50%;
@@ -12,31 +23,23 @@
     		transform: translate(-50%, -50%);
 			text-align: center;
 			justify-content: center;
-			background-color: #ff66ff;
-			width: 500px;
-			height: 400px;
-			opacity: 0.3;
+			height: 800px;
+			width: 900px;
+			background-color: #b300b3;
+			opacity: 1;
 
 		}
 
 		.center {
   			margin: 0;
   			position: absolute;
+  			width: 800px;
   			top: 50%;
   			left: 50%;
   			-ms-transform: translate(-50%, -50%);
   			transform: translate(-50%, -50%);
   			font-size: 24px;
-  			font-family: Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
-		}
-
-		.opc:hover{
-			opacity: 1;
-			transition: all 1s;
-			height: 500px;
-			width: 600px;
-			background-color: #b300b3;
-			transition: width 1s, height 2s , background-color 2s;
+  			
 		}
 
 		.kutu{
@@ -45,25 +48,69 @@
 			background-color: gray;
 		}
 
+		.kutu2{
+			padding-top: 60px;
+			background-color: red;
+			width: 20%;
+			height: 350px;
+			text-align: center;
+			justify-content: center;
+			margin-top: 76px;
+			margin-left: 1400px;
+			background-color: #b300b3;
+			opacity: 0.9;
+
+		}
+
 		.header{
 			font-size: 32px;
   			font-family: Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
 		}
+
+		ol li {
+  			
+  			font-size: 22px;
+  			font-family: Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+		  	padding: 5px;
+		  	margin-left: 0px;
+		  	padding-right: 50px;
+		  	list-style-type: none;
+		  	text-align: center;
+		}
+
+
 
 	</style>
 </head>
 <body class="kutu">
 	<div class="opc">
 		<div class="center">
-			<header class="header">HELLO WORLD<br>GRUP7
-			</header> <br>
-			Asrın Utku Yağmur<br>170418023<br><br>
-			Yusuf Kesimoğlu<br>171418010<br><br>
+			<header class="header">Hakkımızda<br>Grup7</header> <br>
+			Asrın Utku Yağmur<br>170418023
+			<p class="text">
+			İsmim Asrın Utku Yağmur , 21 yaşındayım. Elazığ' da oturuyorum. Marmara Üniversitesi Bilgisayar Mühendisliği 3. sınıf öğrencisiyim.</p>
+			Yusuf Kesimoğlu<br>171418010
+			<p class="text">
+			İsmim Yusuf Kesimoğlu , 21 yaşındayım. Bursa' da oturuyorum. Marmara Üniversitesi Bilgisayar Mühendisliği 3. sınıf öğrencisiyim.</p>
 			Hazar Belet<br>170418020
+			<p class="text">
+			İsmim Hazar Belet , 21 yaşındayım. Elazığ' da oturuyorum. Marmara Üniversitesi Bilgisayar Mühendisliği 3. sınıf öğrencisiyim.</p>
 		</div>
-			
-			
+	</div>
+
+	<div class="kutu2">
+		<header class="header">Proje Fikirlerimiz</header> 
+		<ol>
+		  <li>Korona Bilgilendirme Sitesi</li>
+		  <li>Kripto Para Takip Sitesi</li>
+		  <li>Eşya Alım Satım Sitesi</li>
+		  <li>Restoran-Kafe Tanıtım Sitesi</li>
+		  <li>Futbol ve İddia Yorum-Takip Sitesi</li>
+		</ol> 
+
+		
 	</div>
 
 </body>
 </html>
+	
