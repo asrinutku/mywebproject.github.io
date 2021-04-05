@@ -57,19 +57,19 @@ body{
 }
 
 .datetime{
-	position: relative;
-  left: 1580px;
-  top:820px;
-  color: #fff;
-  background: #10101E;
-  font-family: "Segoe UI", sans-serif;
-  width: 340px;
-  padding: 15px 10px;
-  border: 3px solid #24AE8F;
-  border-radius: 5px;
-  -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255, 255, 255, 0.1));
-  transition: 0.5s;
-  transition-property: background, box-shadow;
+	 position: relative;
+	  left: 1580px;
+	  top:820px;
+	  color: #fff;
+	  background: #10101E;
+	  font-family: "Segoe UI", sans-serif;
+	  width: 340px;
+	  padding: 15px 10px;
+	  border: 3px solid #24AE8F;
+	  border-radius: 5px;
+	  -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255, 255, 255, 0.1));
+	  transition: 0.5s;
+	  transition-property: background, box-shadow;
 }
 
 .datetime:hover{
