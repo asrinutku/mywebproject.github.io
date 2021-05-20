@@ -1,0 +1,74 @@
+.aboutus{
+	width: 100%;
+	height: 494px;
+	background-color: #0F1E3E;
+	margin-top: 75px;
+
+}
+
+.aboutus h1{
+	font-size: 38px;
+	font-weight: 900;
+	color: white;
+	font-family: Cambria, Georgia, serif;
+	text-align: center;
+	padding-top: 20px;
+}
+
+.kadro{
+	display: flex;
+	text-align: center;
+	width: auto;
+	justify-content: center;
+	
+	margin-top: 70px;
+}
+
+.kadro .kadrouyeleri{
+    box-shadow: 0 14px 28px #24AE8F, 0 10px 10px #24AE8F;
+	background: rgb(2, 29, 45);
+	margin: 5px;
+	width: auto;
+	padding: 20px;
+	line-height: 20px;
+	color: white;
+	position: relative;
+    font-family: "Arial Black", Gadget, sans-serif;
+}
+
+.kadro .kadrouyeleri h3{
+	color: white;
+	margin-top: 50px;
+	font-size: 18px;
+	font-weight: 900;
+    
+}
+
+.kadro .kadrouyeleri p.rol{
+	color: white;
+	font-size: 12px;
+	text-transform: uppercase;
+	margin: 12px;
+    font-family: "Arial Black", Gadget, sans-serif;
+
+}
+
+.kadro .kadrouyeleri .kadroimg{
+	width: 110px;
+	height: 110px;
+	border-radius: 50%;
+	position: absolute;
+	top: -50px;
+	left: 50%;
+	transform: translateX(-50%);
+	background: lightblue;
+}
+
+.kadro .kadrouyeleri .kadroimg img{
+	width: 95px;
+	height: 95px;
+	padding: 0px;
+	border-radius: 50%;
+	padding: 5px;
+	
+	}

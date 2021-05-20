@@ -1,128 +1,409 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-XSPQN3DXX8"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'G-XSPQN3DXX8');
-	</script>
-
-
-	
-	<meta charset="utf-8">
-
-	<title>Kripto Para Bilgilendirme ve Borsa Karşılaştırmaları</title>
+	<title>Kripto Para Bilgilendirme</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/card.css">
+	<link rel="stylesheet" type="text/css" href="css/all.css">
+
 	
-		
-	
+	<script type="text/javascript" src="js/all.js"></script>
+
+	<meta charset="utf-8">
+	<meta name="description" content="Kripto Para Bilgilendirme">
+	<meta name="keyword" content="kripto , para , piyasa , analiz, bitcoin">
+	<meta name="viewport" content="width=device-width , initial-scale=1.0">
+
+
 </head>
-<body onload="initClock()" >
-	
-	<div>
-	
-	<ul class="menu">
-			<li><a href="#">Anasayfa</a></li>
-			<li><a href="#">Kripto Paralar</a></li>
-			<li><a href="#">Borsalar</a></li>
-			<li><a href="#">Hakkımızda</a></li>
-				
-	</ul>
+<body style="background-color: #0f1e3e">
 
-	 <!--digital clock start-->
-    <div class="datetime">
-      <div class="date">
-        <span id="dayname">Day</span>,
-        <span id="month">Month</span>
-        <span id="daynum">00</span>,
-        <span id="year">Year</span>
-      </div>
-      <div class="time">
-        <span id="hour">00</span>:
-        <span id="minutes">00</span>:
-        <span id="seconds">00</span>
-        <span id="period">AM</span>
-      </div>
-    </div>
-    <!--digital clock end-->
+	<div class="tasiyici">
+		<div class="ustbanner"></div>
+		
+			<ul class="menu">
+                
+				<li style="margin-left: 33%;"><a href="index.html"><i class="fa fa-home"></i> Anasayfa</a></li>
+				<li><a href="hakkimizda.html"><i class="far fa-address-card"></i> Hakkımızda</a></li>
+				<li><a href="https://www.linkedin.com/in/asr%C4%B1n-utku-ya%C4%9Fmur-1833451a2/"><i class="fas fa-phone-alt"></i> Iletişim</a></li>
+				<li><a href="#"><i class="fab fa-phoenix-framework"></i> Coinler</a></li>
+                <li class="logo">AUYCOIN</li>
 
-    <script type="text/javascript">
-    function updateClock(){
-      var now = new Date();
-      var dname = now.getDay(),
-          mo = now.getMonth(),
-          dnum = now.getDate(),
-          yr = now.getFullYear(),
-          hou = now.getHours(),
-          min = now.getMinutes(),
-          sec = now.getSeconds(),
-          pe = "AM";
+			</ul>
 
-          if(hou >= 12){
-            pe = "PM";
-          }
-          if(hou == 0){
-            hou = 12;
-          }
-          if(hou > 12){
-            hou = hou - 12;
-          }
-
-          Number.prototype.pad = function(digits){
-            for(var n = this.toString(); n.length < digits; n = 0 + n);
-            return n;
-          }
-
-          var months = ["January", "February", "March", "April", "May", "June", "July", "Augest", "September", "October", "November", "December"];
-          var week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-          var ids = ["dayname", "month", "daynum", "year", "hour", "minutes", "seconds", "period"];
-          var values = [week[dname], months[mo], dnum.pad(2), yr, hou.pad(2), min.pad(2), sec.pad(2), pe];
-          for(var i = 0; i < ids.length; i++)
-          document.getElementById(ids[i]).firstChild.nodeValue = values[i];
-    }
-
-    function initClock(){
-      updateClock();
-      window.setInterval("updateClock()", 1);
-    }
-    </script>
-
-   
+             <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget"></div>
+                <div class="tradingview-widget-copyright"><a href="https://tr.tradingview.com" rel="noopener" target="_blank"></a></div>
+                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+                {
+                "symbols": [
+                {
+                    "description": "BTC",
+                    "proName": "BINANCE:BTCUSDT"
+                },
+                {
+                    "description": "ETH",
+                    "proName": "BINANCE:ETHUSDT"
+                },
+                {
+                    "description": "BNB",
+                    "proName": "BINANCE:BNBUSDT"
+                },
+                {
+                    "description": "ADA",
+                    "proName": "BINANCE:ADAUSDT"
+                },
+                {
+                    "description": "DOGE",
+                    "proName": "BINANCE:DOGEUSDT"
+                },
+                {
+                    "description": "XRP",
+                    "proName": "BINANCE:XRPUSDT"
+                },
+                {
+                    "description": "DOT",
+                    "proName": "BINANCE:DOTUSDT"
+                },
+                {
+                    "description": "SOL",
+                    "proName": "BINANCE:SOLUSDT"
+                },
+                {
+                    "description": "SRM",
+                    "proName": "SRMUSDT"
+                },
+                {
+                    "description": "SXP",
+                    "proName": "BINANCE:SXPUSDT"
+                }
+                ],
+                "showSymbolLogo": true,
+                "colorTheme": "dark",
+                "isTransparent": false,
+                "displayMode": "adaptive",
+                "locale": "tr"
+            }
+                </script>
+            </div>
+            <!-- TradingView Widget END -->
 			
+			<div class="slogan">
+                <!-- <span style="background-color: red;">
+                    AUYCOIN İLE KRİPTO PARA PİYASASINDA GÜNCEL KALIN 
+                </span> -->
+				
+                <h2 data-text="AUYCOIN TURKIYE'NIN LIDER KRIPTO PARA PLATFORMU"> 
+                    AUYCOIN TURKIYE'NIN LIDER KRIPTO PARA PLATFORMU
+                </h2>
+
+			</div>
+
+    </div>
+
+
+
+    <div class="infocontainer" style="margin-bottom: 50px;">
+
+        <div class="infocards">
+            <a href="#">
+                <figure>
+                  <figcaption>
+                    <h4> <span>&nbsp;CARDANO</span></h4>
+                
+                  </figcaption>
+                  <p class="img__description">Cardano, akran değerlendirmesinden geçen akademik araştırmalara dayanan, çok amaçlı bir blockchain tasarımıdır. Mühendis, matematikçi, bilim insanı ve iş dünyası profesyonelleri gibi farklı disiplinlerden gelen kişilerden oluşan bir ekip tarafından geliştirilmektedir.
+                        Devam etmekte olan platform geliştirme sürecinde her zaman bilimsel bir yaklaşım sergilenir. Yaratıcılarına göre Cardano'nun arkasındaki en önemli tasarım prensipleri güvenlik, ölçeklenebilirlik ve birlikte çalışabilirliktir.
+                        Cardano'nun yerel para birimi olan Ada, Cardano blockchaininde işlem yapmak için kullanılır. Ada ve Cardano arasındaki ilişki, ether (ETH) ile Ethereum'unkine çok benzerdir.
+                        Cardano'nun gelişimi, birden fazla iş biriminin kontrolü altındadır. IOHK, Cardano protokolünün geliştirilmesini idare eder; Cardano Vakfı projeyi yönetir ve EMURGO da iş geliştirme ve kullanımı artırmadan sorumludur. IOHK, Ethereum Classic'in (ETC) geliştirilmesinde de rol üstlenmiştir</p>
+                </figure>
+            </a>
+        </div>
+
+        <div class="infocards">
+            <a href="#">
+                <figure>
+                  <figcaption>
+                    <h4> <span>&nbsp;BITCOIN</span></h4>
+                   
+                  </figcaption>
+                  <p class="img__description">Dağıtık yapısı sayesinde çok kısa bir sürede günümüz finansal düzenine karşı yükselişe geçti. Bitcoin ağına giren işlemlerin takip edilmesi mümkün iken, işlemi gerçekleştiren kişinin kim olduğunu bulmak olanaksızdır. Bitcoin Blockchain ağında onaylanan işlemler, zincir yapısından dolayı geri döndürülemez ve bu işlemler değiştirilemez.
+
+                        Düzenlemeye tabii tutulamadığı için Bitcoin'in değeri binlerce dolara kadar yükselmiştir. Bitcoin'in yükselişinin ardından birçok kripto para birimi daha ortaya çıkmıştır. Bu para birimlerine "alternative coin", bir diğer değişle "alt coin" denmektedir. Alternatif kripto para birimleri yaratılırken çeşitli noktalarda farklı özelliklere sahip olarak rekabet avantajından yararlanılmış ve yeni market tipleri ortaya çıkmıştır. Bu farklılıklara üretilebilecek maksimum para miktarı, algoritma, blockchain alt türleri (özel/paylaşımlı, izinli/izinsiz mutabakat) örnek olarak verilebilir.
+                        
+                        Bitcoin blockchain platformunda üretilebilecek maksimum Bitcoin miktarı 21 milyon adettir. Bitcoin uçtan uca, adresten adrese transfer imkanı sağlamaktadır, ayrıca blok üretim süresi yaklaşık 10 dakikadır.</p>
+                </figure></a>
+        </div>
+
+        <div class="infocards">
+            <a href="#">
+                <figure>
+                  <figcaption>
+                    <h4> <span>&nbsp;ETHEREUM</span></h4>
+                  
+                  </figcaption>
+                  <p class="img__description">Ethereum ilk olarak Kuzey Amerika Bitcoin Konferansında, Ethereum kurucusu Vitalik Buterin tarafından tanıtımı yapılan bir sistemdir. Genel olarak bir alt coin statüsünde görülse de Ethereum esasında blockchain teknolojisinin gelişmesini ve daha fazla alanda kullanılmasını amaçlayan bir yenilikçi bir sistemdir.
+
+                        Ethereum kısaca, güç kaynağı olarak Ether (ETH) kripto para birimini alan bir Kripto İşletim Sistemidir. Amaç Bitcoin’inde bağlı olduğu blockchain sistemi üzerinde kullanıcıların bu sistem üzerinden yeni yazılımları oluşturmasını sağlamaktadır. Ethereum’un kullanıcılara sağladığı bu özgürlük sayesinde bir çok alt coin çıkarılmasına olanak sağlar.
+                        
+                        Ethereum sistemi ile amaçlanan, kişisel veriler gibi bilgilerin üçüncü şahıslar tarafından depolanmasını ve farklı amaçlar için kullanılmasını engellenmesidir. Bugün neredeyse internetten yaptığımız bütün işlemler (alışveriş, banka işlemleri, sosyal medya kullanımımız, internet geçmişimiz vb.) veriler halinde data banklarda kayıt altına alınmaktadır. Bu bilgilerin hangi amaçlar doğrultusunda kullanılacağı konusu ise tam bir bilinmezliktir</p>
+                </figure></a>
+        </div>
+        
+        <div class="infocards">
+            <a href="#">
+                <figure>
+                  <figcaption>
+                    <h4> <span>&nbsp;RIPPLE</span></h4>
+
+                        
+                  </figcaption>
+                  <p class="img__description">Bankacılık ve finans sektöründe hızlı ve daha az masraflı bir ödeme sistemi kurmayı amaçlayan Ripple’ın kripto parası XRP, kullanıcılarına saniyeler içinde transfer imkânı sağlar.
+
+                        Yaratıcılarının hedefine rağmen, Ripple dijital ödemesiyle daha ünlüdür. Ripple, eşler arası ve açık kaynaklı merkezi olmayan bir çerçeve üzerinde çalışır ve bu, her türlü formda sorunsuz ve verimli para transferi ve işlem yapılmasını sağlar.
+                        
+                        Ripple altyapısı, bankalar için daha hızlı işlem sağlayacak ve büyük finansal kurumlar için uygun bir seçenek olabilecek şekilde tasarlanmıştır.
+                        
+                        Ripple’ı benzersiz kılan, kullanıcıların sanal para birimlerini oluşturmasına izin veren RippleNet adlı platformudur.
+                        
+                        Ripple’ın kripto para birimi XRP saniyede 1.500 işlem ve 4 saniyenin altında bir ödeme yapma potansiyeline sahip dijital varlıktır. Bununla birlikte, bir dijital varlık olarak XRP’nin kullanımı Bitcoin ve Ethereum’a nazaran sınırlıdır.
+                    </p>
+                </figure></a>
+        </div>
+    </div>
+
+
+    <div class="infocontainer">
+
+        <div class="infocards">
+            <a href="#">
+                <figure>
+                  <figcaption>
+                    <h4> <span>&nbsp;SOLANA</span></h4>
+                  
+                  </figcaption>
+                  <p class="img__description">Solana, merkezi olmayan finans ( DeFi ) çözümleri sağlamak için blockchain teknolojisinin izinsiz doğasını kullanan bankaların son derece işlevsel bir açık kaynak projesidir . Proje üzerindeki fikir ve ilk çalışma 2017'de başlarken, Solana resmi olarak Mart 2020'de Solana Vakfı tarafından merkezi İsviçre'nin Cenevre kentinde bulunan Solana Vakfı tarafından başlatıldı.
+
+                    Solana protokolü, merkezi olmayan uygulama ( DApp ) oluşturmayı kolaylaştırmak için tasarlanmıştır . Blockchain'in temelde yatan Proof of Stake ( PoS ) konsensüsü ile birleştirilmiş bir tarih kanıtı (PoH) konsensüsü sunarak ölçeklenebilirliği iyileştirmeyi amaçlamaktadır.
+                    
+                    Yenilikçi hibrit fikir birliği modeli nedeniyle Solana, hem küçük ölçekli tüccarlar hem de kurumsal tüccarların ilgisini çekiyor. Solana Vakfı için önemli bir odak noktası, merkezi olmayan finansmanı daha büyük ölçekte erişilebilir kılmaktır.</p>
+                </figure>
+            </a>
+        </div>
+
+        <div class="infocards">
+            <a href="#">
+                <figure>
+                  <figcaption>
+                    <h4> <span>&nbsp;CAKE</span></h4>
+                   
+                  </figcaption>
+                  <p class="img__description">PancakeSwap, kullanıcıların token alışverişi yapmasına olanak tanıyan, çiftçilik yoluyla likidite ve karşılığında ücretler sağlayan merkezi olmayan bir finans (DeFi) uygulaması olan otomatik bir piyasa yapıcıdır (AMM).
+
+                    Eylül 2020'de piyasaya sürüldü ve Binance Smart Chain'de BEP20 tokenlerini takas etmek için merkezi olmayan bir borsadır. PancakeSwap, kullanıcıların bir likidite havuzuna karşı işlem yaptıkları otomatik bir piyasa yapıcı modeli kullanır. Bu havuzlar, fonlarını havuza yatıran ve karşılığında likidite sağlayıcı (LP) jetonları alan kullanıcılar tarafından doldurulur.
+                    
+                    Bu belirteçler daha sonra havuzdaki paylarını ve işlem ücretlerinin bir kısmını geri almak için kullanılabilir. Bu LP belirteçleri, FLIP olarak bilinir. PancakeSwap ayrıca kullanıcıların CAKE ve SYRUP gibi ek belirteçleri toplamasına da olanak tanır. Çiftlikte kullanıcılar LP jetonları yatırabilir ve CAKE ile ödüllendirilebilir.
+                    
+                    PancakeSwap, kullanıcıların BEP20 jetonlarını takas etmelerine, borsaya likidite sağlamalarına ve ücretler kazanmalarına, daha fazla CAKE kazanmak için CAKE hisselerine olanak tanır.</p>
+                </figure></a>
+        </div>
+
+        <div class="infocards">
+            <a href="#">
+                <figure>
+                  <figcaption>
+                    <h4> <span>&nbsp;STELLAR</span></h4>
+                  
+                  </figcaption>
+                  <p class="img__description">Stellar ağı, farklı varlıklar arası değer transferine olanak sağlayan açık kaynaklı, dağıtık ve topluluğa ait bir blockchain ağıdır. Stellar bu transferleri bir peniden daha az bir tutara gerçekleştirmeyi hedefliyor. Bunu yaparken her gelir seviyesinden insanın, düşük maliyetli finansal servislere erişim sağlamasını amaç haline getirmiş, açık bir finansal sistem olmayı hedefliyor. Stellar ağının kendi dijital para birimi Lumens (XLM) olarak adlandırılıyor. Her Stellar hesabında, Stellar ödeme sisteminin istenmeden tekrar tekrar kullanılmasının (spam) önüne geçmek için küçük miktarda Lumens tutulması zorunlu kılınıyor. Bir kullanıcı, sahip olduğu Lumens sayesinde sahip olduğu herhangi bir para birimini diğer kullanıcıya farklı bir cinsten gönderebiliyor. Stellar akıllı kontratları da destekliyor.
+                    İlk başta iki ödeme ağı da aynı protokolü kullanıyordu. Stellar, tıpkı Ripple gibi mali kurumları birleştirmeyi hedefleyen ve sınırlar arası transferlerin maliyetini ve gereken süreyi önemli ölçüde azaltmayı amaçlayan bir ödeme teknolojisi olarak çalışıyor.     
+                  </p>
+                </figure></a>
+        </div>
+        
+        <div class="infocards">
+            <a href="#">
+                <figure>
+                  <figcaption>
+                    <h4> <span>&nbsp;TRON</span></h4>
+
+                        
+                  </figcaption>
+                  <p class="img__description">TRON (TRX), 2017’de Justin Sun tarafından Singapur merkezli, kâr amacı gütmeyen Tron Vakfı aracılığıyla kuruldu. Tron Foundation’ın 2017’deki ilk kripto para arzı (ICO) 100 milyar TRX yarattı ve toplam 70 milyon dolar topladı.
+
+                    TRON Protokolü, blockchain teknolojisini merkez alan bir işletim sistemini temsil ediyor. Bu sistemde geliştiriciler, akıllı sözleşmeler ve merkeziyetsiz uygulamalar (DApps) yaratabiliyor, özgürce yayınlayabiliyor, veri ve diğer içerikleri depolayabiliyor. TRON Vakfına göre bu ağı çevreleyen ekosistem, üst düzey ölçeklendirilebilirlik ve yüksek verimliliğe sahip hesaplama gücü sayesinde tutarlı güvenilirlikte ve yüksek hızda işlem doğrulama üzerine uzmanlaşıyor.
+                    
+                    TRON, ilk olarak Ethereum tabanlı bir token olarak yaratıldı. Ancak 2018’de kendi ağına geçti. ERC20 TRX tokeni sahipleri, bu tokenleri TRON ağındaki TRX dijital para birimi ile takas etti. Bunun ardından Ethereum tabanlı tokenler yok edildi. TRON’un kurucusu Justin Sun, sosyal medyayı aktif kullanmasıyla biliniyor. Aynı zamanda BitTorrent’in CEO’su olan Sun, 2020’de Steem’i satın aldı.
+                    </p>
+                </figure></a>
+        </div>
+
+    </div>
+
+
+
+    <div class="sorucevap">
+
+    	<h2 class="sorucevapbaslik">Stake Etmek (Staking) Nedir?</h2>
+        <!-- <img src="img/bet.png" style="margin-top: 10px;"> -->
+        <p class="cevap">
+            
+            Staking, bir kripto para zincirinin operasyonlarını desteklemek için kripto paralarınızı cüzdanınızda belirli süre kilitleyip harcamadan veya transfer etmeden tutma işlemidir. Kilitlediğiniz bu kripto paralardan, kilitlediğiniz süre boyunca belirli oranlarda ödül kripto para kazanırsınız. Kripto paralarınızı kilitlemek için özel bir mobil veya bilgisayar cüzdanına ihtiyaç duyarsınız.
+            Stake etmek kavramı Proof of Stake (POS) mekanizması ile beraber kripto paralara gelmiş bir kavramdır. Operasyona en büyük katkısı çok miktarda işlem gücünün boşa harcanmasının önüne geçilmesidir. Satking ayrıca kripto paraların dolaşımda olan miktarını sınırladığı için arz talep dengesi için de yararlı olmaktadır. Staking yapılan kripto para zincirinde dolaşımda ne kadar az para varsa fiyatının artma olasılığı da doğru orantıda artacaktır.
+        </p>
+        
+
+    </div>
+
+    <div class="sorucevap">
+        <h2 class="sorucevapbaslik">BEP-20 ERC-20 Ağları Arasındaki Fark Nedir?</h2>
+        <!-- <img src="img/bet.png" style="margin-top: 10px;"> -->
+
+    	<p class="cevap">
+            ERC-20 ve BEP-20, tokenlar için belirli kuralları ve teknik ilkeleri tanımlayan token standartlarıdır. Transferlerin, yatırma ve çekim işlemlerinin nasıl yapılacağını belirlerler. Hem ERC-20 hem de BEP-20, bir tokenın farklı cüzdan, proje ve akıllı sözleşmelerle nasıl etkileşim kurduğunu standartlaştırır.
+            Her iki standart da çalışma şekli bakımından birçok ortak noktaya sahiptir, fakat ERC-20 Ethereum'a ve BEP-20 de Binance Smart Chain'e özeldir. Basitçe ifade edecek olursak, bunlar farklı blockchainlere ait token standartlarıdır.          
+            Yanlış bir ağ üzerinde bulunan kriptonuzu amacınıza yönelik kullanmanız mümkün olmayacaktır. Örneğin BSC'ye gönderilen Ethereum, Ethereum DApp'lerinde ve akıllı sözleşmelerinde kullanılamaz.
+        </p>
+    	
+
+    </div>
+
+    <br><br><br><br>
+
+    <div class="sorucevap">
+
+    	<h2 class="sorucevapbaslik">Bitcoin Piyasa Hakimiyeti (Dominance) Nedir?</h2>
+        <!-- <img src="img/bet.png" style="margin-top: 10px;"> -->
+        <p class="cevap">
+            Bitcoin, ilk üretimin gerçekleştiği 2009 yılından beri kriptopara piyasasının en büyük aktörü konumundadır. Piyasada 6 binden fazla kriptopara birimi olmasına rağmen hiçbir kriptopara, piyasa hakimiyeti bakımından Bitcoin’in önüne geçmeyi başaramamıştır. Bitcoin Piyasa Hakimiyeti veya Bitcoin Dominance, Bitcoin'in sahip olduğu piyasa değerinin kriptopara piyasasının genel değerine oranını ifade eden bir veridir.
+            Geçmiş veriler incelendiğinde, 2013 senesinde yüzde 96'nın üzerinde olan Bitcoin hakimiyetinin 2018 yılında yüzde 32'ye kadar gerilediği görülmektedir. Bu büyük gerilemenin altında, Ethereum başta olmak üzere diğer kriptopara birimlerinin işlem hacimlerinin artması yatmaktadır.
+            İlk kriptopara olması Bitcoin'in kriptopara sektörüne yön vermesini sağlamaktadır. Piyasadaki kriptopara sayısı 6 bini geçmesine rağmen henüz Bitcoin'in piyasadaki ağırlığı ile rekabet edebilecek bir kriptopara ortaya çıkmamıştır.
+        </p>
+        
+
+    </div>
+
+
+
+    <div class="sorucevap">
+        <h2 class="sorucevapbaslik">Madenci Onayı Nedir?</h2>
+        <!-- <img src="img/bet.png" style="margin-top: 10px;"> -->
+
+    	<p class="cevap">
+            Merkezi olmayan blokzincirlerinde gerçekleşen transfer işlemleri, blokzinciri ağına dahil olan madenciler tarafından onaylanmaktadır. (Bkz. Kriptopara Madenciliği (Mining) Nedir? ) Madenci onayı, blokzincirine eklenecek yeni bloğa dahil edilen işlemlerin, geçerliliğinin, blokzincirinin algoritması ile kontrol edilerek doğrulanmasıdır.
+
+            Bir transfer işleminin geçerli olarak kabul edilebilmesi için, işlem yapılan blokzincirinde bir veya daha fazla madenci tarafından onaylanması gerekir. Örneğin, Bitcoin ağında gerçekleşen bir transfer işleminin geçerli kabul edilebilmesi için 1 madenci onayı alması gerekirken, Ethereum transferininin 12 onay alması gereklidir.
+            Madenci onay süreleri zincirinin altyapısına, kullandığı algoritmaya, madencilik metoduna göre farklılıklar göstermektedir. Genel olarak, İş madenciliği yapılan blokzincirlerinde onay süreleri Hisse Kanıtı (PoS - Proof of Stake) madenciliğine göre daha uzun sürmektedir.
+
+        </p>
+    </div>
+   
+    <div class="tekli"> 
+
+        <div class="kutu">
+            <div class="sign">
+                <span class="sign__word">AUYCOIN , 7/24 YANINIZDA</span>
+                <span class="sign__word">COIN VE PROJELERI OGREN</span>
+                <span class="sign__word">PIYASAYI ANLIK TAKIP ET</span>
+                <span class="sign__word">VE ÇOK DAHA FAZLASI...</span>
+            </div>
+        </div>
+        
+        <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container" style="margin-top: 100px; margin-left: 75px;">
+            <div class="tradingview-widget-container__widget"></div>
+            <div class="tradingview-widget-copyright"><a href="https://tr.tradingview.com/markets/cryptocurrencies/prices-all/" rel="noopener" target="_blank"></a></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
+            {
+            "width": 800,
+            "height": 620,
+            "defaultColumn": "overview",
+            "screener_type": "crypto_mkt",
+            "displayCurrency": "USD",
+            "colorTheme": "dark",
+            "locale": "tr",
+            "isTransparent": true
+            }
+            </script>
+        </div>
+    <!-- TradingView Widget END -->
+        
+    </div>
+
+    <div class="infocontainer" style="margin-bottom: 100px;">
+
+        <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container" style="margin-left: 460px;">
+            <div id="tradingview_1c4f6"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+            <script type="text/javascript">
+            new TradingView.widget(
+            {
+            "width": 1000,
+            "height": 650,
+            "symbol": "NASDAQ:AAPL",
+            "timezone": "Etc/UTC",
+            "theme": "dark",
+            "style": "1",
+            "locale": "tr",
+            "toolbar_bg": "#f1f3f6",
+            "enable_publishing": false,
+            "range": "YTD",
+            "hide_side_toolbar": true,
+            "allow_symbol_change": true,
+            "details": false,
+            "hotlist": true,
+            "calendar": false,
+            "container_id": "tradingview_1c4f6"
+        }
+            );
+            </script>
+        </div>
+        <!-- TradingView Widget END -->
+
+    </div>
+
+
+
+    <div class="footer">
+        
+
+        <div class="footerleft">
+
+            AUYCOIN
+            
+        </div>
+        <div class="footercenter">
+            <h1 class="footerbaslik">Sayfalar</h1>
+            <ul>
+                <li><a href="index.html">Anasayfa</a></li><<br>
+                <li><a href="hakkimizda.html">Hakkımızda</a></li><br>
+                <li><a href="https://www.linkedin.com/in/asr%C4%B1n-utku-ya%C4%9Fmur-1833451a2/">İletişim</a></li><br>
+                <li><a href="index.html">Yorumlar</a></li><br>
+            </ul>
+        </div>
+
+        <div class="footeright">
+            <h1 class="footerbaslik">Sosyal Medya</h1>
+                <ul>
+                <li><a href="https://www.linkedin.com/in/asr%C4%B1n-utku-ya%C4%9Fmur-1833451a2/"><i class="fab fa-linkedin fa-1x" aria-hidden="true" ></i></a></li>&emsp;
+
+                <li><a href="https://www.instagram.com/asrinutk/?hl=tr"><i class="fab fa-instagram fa-1x"  aria-hidden="true" ></i></a></li>&emsp;
+
+                <li><a href="https://github.com/asrinutku"><i class="fab fa-github  fa-1x" aria-hidden="true" ></i></a></li>&emsp;
+
+
+                <li><a href="https://www.codewars.com/users/asrinutku"><i class="fas fa-code fa-1x" aria-hidden="true"></i></a></li>
+                </ul>
+        </div>
+
+        <div class="footeralt">© All Rights Reserved <br> Designed by Asrın Utku Yağmur</div>
+
+    </div>
 	
-
-	<!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container" style="margin-top: 80px; margin-left: 500px;">
-  <div id="tradingview_8b81b"></div>
-  <div class="tradingview-widget-copyright">TradingView'den <a href="https://tr.tradingview.com/symbols/NASDAQ-AAPL/" rel="noopener" target="_blank"><span class="blue-text">AAPL Grafiği</span></a></div>
-  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-  <script type="text/javascript">
-  new TradingView.widget(
-  {
-  "width": 980,
-  "height": 610,
-  "symbol": "NASDAQ:AAPL",
-  "interval": "D",
-  "timezone": "Etc/UTC",
-  "theme": "dark",
-  "style": "1",
-  "locale": "tr",
-  "toolbar_bg": "#f1f3f6",
-  "enable_publishing": false,
-  "allow_symbol_change": true,
-  "container_id": "tradingview_8b81b"
-}
-  );
-  </script>
-</div>
-<!-- TradingView Widget END -->
-
+<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
 
 
 </body>
 </html>
-
