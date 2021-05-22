@@ -2,13 +2,10 @@
 function fetchData(){
     
     fetch('https://jsonplaceholder.typicode.com/todos').then(res =>{
-        
         if(!res.ok){
             throw Error("ERROR");
         }
-
         return res.json();
-        
     })
     
     .then(data=>{
@@ -20,7 +17,6 @@ function fetchData(){
                 <p>Title: ${user.title}</p>
                 <p>Completed: ${user.completed}</p>
                 <br>
-
             </div>
             `
         }).join("");
